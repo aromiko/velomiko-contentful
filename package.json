@@ -1,0 +1,42 @@
+{
+  "name": "velomiko-contentful",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-types": "dotenv -- cross-var cf-content-types-generator -s %NEXT_PUBLIC_CONTENTFUL_SPACE_ID% -t %CONTENTFUL_MANAGEMENT_ACCESS_TOKEN% -e %CONTENTFUL_ENVIRONMENT% -o ./src/types/contentful -X -r"
+  },
+  "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.22.9",
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "contentful": "^10.14.1",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.428.0",
+    "next": "14.2.5",
+    "next-themes": "^0.3.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "cf-content-types-generator": "^2.15.3",
+    "cross-var": "^1.1.0",
+    "dotenv-cli": "^7.4.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
